@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/assets/css/nav.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <link rel="stylesheet" href="/assets/css/projects.css">
+  <link rel="stylesheet" href="/assets/css/contact.css">
+  <link rel="stylesheet" href="/assets/css/contributor.css">
+  <link rel="stylesheet" href="/assets/css/achievements.css">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+  <title>P-society</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <!-- bootstrapcdn CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- bootstrapcdn JS-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style media="screen">
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+  </style>
+
+</head>
+<body>
+  
+  
+    <div class="border-bottom">
+      <div class="container px-3 py-4">
+        <div class="py-4">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light text-change white" id="navbar">
+            <a class="navbar-brand brand px-2" href="/">P-SOCIETY</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link px-2 text-change" href="/contact/">CONTACT</a>
+                <a class="nav-item nav-link px-2 text-change" href="/blogs/">BLOGS</a>
+                <a class="nav-item nav-link px-2 text-change" href="https://github.com/p-society">PROJECTS</a>
+                <a class="nav-item nav-link px-2 text-change" href="https://iiit-bhcoding.slack.com/">COMMUNITY</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  
+
+  
+
+  <script type="text/javascript">
+  var app = document.getElementById('appTop')
+  var nav = document.getElementById('navbar')
+  var memberNames = document.getElementById('memberNames')
+  var last_known_scroll_position = 0;
+  var ticking = false;
+  function doSomething(scroll_pos) {
+    if(scroll_pos<100){
+      nav.classList.add("navIn")
+      nav.classList.add("fixed-top")
+    } else if(scroll_pos>100){
+      nav.classList.remove("navIn")
+      nav.classList.add("navout")
+    }
+  }
+
+  window.addEventListener('scroll', function(e) {
+    last_known_scroll_position = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        doSomething(last_known_scroll_position);
+        ticking = false;
+      })
+      ticking = true;
+    }
+  })
+  </script>
+
+    <div class="container-fluid explore">
+  <div class="row">
+    <div class="col-xs-12 col-md-3"></div>
+    <div class="col-xs-12 col-md-6">
+      <h1>Preview</h1>
+      
+        <br>
+        <a href="https://user-images.githubusercontent.com/24803604/39970250-e3d22eca-5705-11e8-9c89-472ff4d982ea.gif"><img src="https://user-images.githubusercontent.com/24803604/39970250-e3d22eca-5705-11e8-9c89-472ff4d982ea.gif" alt="preview" class="img-fluid"></a>
+        <br>
+      
+        <br>
+        <a href="https://user-images.githubusercontent.com/24803604/39970260-f63d6bc4-5705-11e8-8d94-b2f984f8c998.gif"><img src="https://user-images.githubusercontent.com/24803604/39970260-f63d6bc4-5705-11e8-8d94-b2f984f8c998.gif" alt="preview" class="img-fluid"></a>
+        <br>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container body-apps-info">
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <h1>Information</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container body-apps">
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+        <blockquote>
+  <p>Practice touch typing and compete with your friends all from the comfort of your shell and become a typing ninja <img class="emoji" title=":boom:" alt=":boom:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a5.png" height="20" width="20">.</p>
+</blockquote>
+
+<p><em>But this has already been done. Why should I use this client?</em></p>
+
+<p>Because most other shell clients don’t offer the features that we do</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Practice mode (offline mode)</li>
+  <li>User stats (words per minute, time taken)</li>
+  <li>Online mode (have a type-race by spawning up a server and sharing it with your friends)</li>
+  <li>Ask for a rematch after the race ends (online mode)</li>
+  <li>Can view the top 10 Highscores in online mode</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>run <code class="highlighter-rouge">npm i --global typeracer-cli</code> from your command line</p>
+
+<h2 id="possible-errors">Possible Errors</h2>
+
+<p>When you have installed this tool some times later you could find some error when you start <strong>typerace</strong>.</p>
+
+<p>This may be because new update might have been rolled out and you have to update to latest version.</p>
+
+<p><strong>How to update</strong></p>
+
+<p>Its same as installation just run <code class="highlighter-rouge">npm i --global typeracer-cli</code> from your command line</p>
+
+<p>Now even after that if you see any errors, follow the below steps</p>
+
+<ul>
+  <li>
+    <p>find <strong>.nvm</strong> folder in your home directory.</p>
+  </li>
+  <li>cd to <code class="highlighter-rouge">.nvm/versions/node/${your node version}/bin</code> and delete <strong>typerace file</strong>
+</li>
+  <li>cd to <code class="highlighter-rouge">.nvm/versions/node/${your node version}/lib/node_modules</code> and delete <strong>typeracer-cli folder</strong>
+</li>
+  <li>run <code class="highlighter-rouge">npm - -global typeracer-cli</code>
+</li>
+</ul>
+
+<p>These steps should resolve the isssue. If it does not please open an isssue.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>run <code class="highlighter-rouge">typerace</code> or <code class="highlighter-rouge">typerace -h</code> to its usage</p>
+
+<p><strong>Output</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usage: typerace [options] [command]
+
+  Options:
+
+    -h, --help          output usage information
+
+  Commands:
+
+    practice|p          Start typeracer
+    online|o [options]  Start game in online mode
+</code></pre></div></div>
+
+<p><strong>Practice mode</strong></p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">typerace p</code> to start practice mode.</li>
+</ul>
+
+<p><strong>Online mode</strong></p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">typerace o -f</code> to start online mode which will prompt a question</li>
+</ul>
+
+<p><strong>Are you starting server for race (y/N) ?</strong></p>
+
+<p>Now 2 cases are there</p>
+
+<ul>
+  <li>If <strong>yes</strong>
+    <ul>
+      <li>You will share <strong>Room to join for race</strong>, <strong>Number of racers</strong>, <strong>Number(sort of password)</strong>
+</li>
+      <li>All the above will be prompted if you select yes and all of your friends should fill them out same.</li>
+    </ul>
+  </li>
+  <li>If <strong>no</strong>
+    <ul>
+      <li>Ask for <strong>Room to join for race</strong>, <strong>Number of racers</strong>, <strong>Number(sort of password)</strong> from your friend who created a private room to race.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Highscores</strong></p>
+
+<p>To view the top 10 Highscores in online mode.</p>
+
+<p>run <code class="highlighter-rouge">typerace o -s</code></p>
+
+<p>Enjoy <img class="emoji" title=":fire:" alt=":fire:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f525.png" height="20" width="20"></p>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>If you think of a feature enhancement or find a bug kindly raise an issue. We also welcome you to work on your issues by just commenting down on them with <em>“I would like to work on this”</em>. All contributions are appreciated.</p>
+
+<p><strong>General Setup</strong></p>
+
+<ul>
+  <li>
+    <p>fork the repository</p>
+  </li>
+  <li>
+    <p>clone your forked repository</p>
+  </li>
+  <li>
+    <p>set the upstream remote</p>
+  </li>
+  <li>
+    <p>cd to folder and run <code class="highlighter-rouge">npm install</code></p>
+  </li>
+  <li>
+    <p>create a <code class="highlighter-rouge">.env</code> file in root directory and put following in it</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DATABASE=your mongoDB url
+</code></pre></div></div>
+
+<ul>
+  <li>run <code class="highlighter-rouge">npm start</code>
+</li>
+</ul>
+
+<p><em>But I don’t know how to code, is there any other way I can contribute?</em></p>
+
+<p>Yes, ofcourse you can we need lots of paragraphs so that our users don’t get bored by typing out the same text over and over  again. To add a paragraph follow these steps:</p>
+
+<ul>
+  <li>Add paragraphs in <code class="highlighter-rouge">paragraphs/para.json</code>
+</li>
+  <li>run <code class="highlighter-rouge">npm test</code>
+</li>
+  <li>
+<strong>Important:</strong> all tests should pass as you would get a test failure for duplicate paragraphs.</li>
+  <li>Find same paragraphs then run <code class="highlighter-rouge">npm test</code>
+</li>
+  <li>If all tests pass locally then <strong>Open a PR</strong>
+</li>
+</ul>
+
+<h2 id="support-us">Support Us</h2>
+
+<p>We are a bunch of undergrads passionate about software development looking to make cool stuff. A little motivation and support helps us a lot. If you like this nifty hack you can support us by doing any (or all <img class="emoji" title=":wink:" alt=":wink:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png" height="20" width="20"> ) of the following:</p>
+<ul>
+  <li>
+<img class="emoji" title=":clap:" alt=":clap:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44f.png" height="20" width="20"> Upvote on producthunt <a href="https://www.producthunt.com/posts/typeracer-cli">producthunt</a>
+</li>
+  <li>
+<img class="emoji" title=":star:" alt=":star:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2b50.png" height="20" width="20"> Star us on <a href="https://github.com/p-society/typeracer-cli">Github</a> and make us trend so that other people can know about our project.</li>
+  <li>
+<img class="emoji" title=":clap:" alt=":clap:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44f.png" height="20" width="20"> Clap for us on <a href="https://medium.com/programming-society-gazette/shellracer-bbce3efbe888">Medium</a>
+</li>
+  <li>Tweet about us</li>
+  <li>Share this on Facebook</li>
+  <li>Install it and increase our download count on npm</li>
+  <li>Donation (Coming Soon)</li>
+</ul>
+
+<h2 id="contributors">Contributors</h2>
+
+<ul>
+  <li>
+<em>Conceived by:</em>  <img class="emoji" title=":thought_balloon:" alt=":thought_balloon:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ad.png" height="20" width="20"> <a href="https://github.com/shibasisp">Shibasis Patel</a>
+</li>
+  <li>
+<em>Developed by:</em>  <img class="emoji" title=":computer:" alt=":computer:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4bb.png" height="20" width="20"> <a href="https://github.com/knrt10">Kautilya Tripathi</a>
+</li>
+  <li>
+<em>Documentation by:</em>  <img class="emoji" title=":pencil:" alt=":pencil:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" height="20" width="20"> <a href="https://github.com/palash25">Palash Nigam</a> &amp; <a href="https://github.com/IamRaviTejaG">Ravi Teja Gannavarapu</a>
+</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+  <footer class="footer-under">
+  <header class="header-footer">
+   <div class="svg-footer">
+     <svg id="sun" style="position: absolute;top: 2.5rem;right: 0;" width="160px" height="190px" viewbox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <circle cx="170" cy="100" r="100" fill="#F8D71B"></circle>
+     </svg>
+     <svg id="dunes" width="1399px" height="575px" style="top:10.5rem;left:-25rem;position:absolute" viewbox="0 0 1399 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <path d="M460.049805,0 C526.688307,0 914.984756,249.041033 914.984756,249.041033 L0,249.041033 C0,249.041033 393.411303,2.21509134e-15 460.049805,0 Z" fill="#F5A623"></path>
+       <path d="M460.165305,1 C460.165305,218.282873 1089.92664,248.654319 1089.92664,248.654319 L0,248.654319 C0,248.654319 393.526803,1 460.165305,1 Z" fill="#EE9F21"></path>
+       <path d="M839,73 C947.982568,73 1399,249 1399,249 L279,249 C279,249 730.017432,73 839,73 Z" fill="#F5A623"></path>
+       <path d="M839,73 C839,183.333997 1055.01296,249 1055.01296,249 L279,249 C279,249 730.017432,73 839,73 Z" fill="#ED9F21"></path>
+     </svg>
+   </div>
+  </header>
+  <div class="container-width">
+    <div class="footer-container">
+      <div class="foot-lists">
+        <div class="foot-list">
+          <div class="foot-list-item"><a href="/" target="_blank" class="foot-list-item-anchor">About us</a></div>
+          <div class="foot-list-item"><a href="/contact/" target="_blank" class="foot-list-item-anchor">Contact</a></div>
+          <div class="foot-list-item"><a href="https://medium.com/programming-society-gazette" target="_blank" class="foot-list-item-anchor">Articles</a></div>
+          <div class="foot-list-item"><a href="https://iiit-bhcoding.slack.com/" target="_blank" class="foot-list-item-anchor">Slack</a></div>
+        </div>
+        <div class="foot-list">
+          <div class="foot-list-item"><a href="https://github.com/p-society" target="_blank" class="foot-list-item-anchor">Github</a></div>
+          <div class="foot-list-item"><a href="https://github.com/p-society/p-society.github.io" target="_blank" class="foot-list-item-anchor">Site source code</a></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="form-sub">
+        <div class="foot-form-cont">
+          <div class="foot-form-title">Follow us</div>
+          <div class="foot-list-item">
+            <a href="https://www.facebook.com/psocietyiiitbh/" target="_blank" class="foot-list-item-anchor"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="https://twitter.com/psociiit" target="_blank" class="foot-list-item-anchor"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/p-soc/" target="_blank" class="foot-list-item-anchor"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="https://medium.com/programming-society-gazette" target="_blank" class="foot-list-item-anchor"><i class="fa fa-medium fa-2x"></i></a>
+            <a href="https://dribbble.com/psociiit" target="_blank" class="foot-list-item-anchor"><i class="fa fa-dribbble fa-2x"></i></a>
+          </div>
+          <div class="foot-form-desc">We will be happy to have you. <img class="emoji" title=":wink:" alt=":wink:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png" height="20" width="20">
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="made-with">
+      made with <img class="emoji" title=":heart:" alt=":heart:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png" height="20" width="20"> by <a href="https://github.com/p-society" target="_blank">p-society</a>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</footer>
+
+</body>
+</html>

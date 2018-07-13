@@ -1,13 +1,157 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/assets/css/nav.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <link rel="stylesheet" href="/assets/css/projects.css">
+  <link rel="stylesheet" href="/assets/css/contact.css">
+  <link rel="stylesheet" href="/assets/css/contributor.css">
+  <link rel="stylesheet" href="/assets/css/achievements.css">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 
-<div class="jumbotron">
+  <title>P-society</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <!-- bootstrapcdn CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- bootstrapcdn JS-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style media="screen">
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+  </style>
+
+</head>
+<body>
+  
+  
+    <div class="border-bottom">
+      <div class="container px-3 py-4">
+        <div class="py-4">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light text-change white" id="navbar">
+            <a class="navbar-brand brand px-2" href="/">P-SOCIETY</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link px-2 text-change" href="/contact/">CONTACT</a>
+                <a class="nav-item nav-link px-2 text-change" href="/blogs/">BLOGS</a>
+                <a class="nav-item nav-link px-2 text-change" href="https://github.com/p-society">PROJECTS</a>
+                <a class="nav-item nav-link px-2 text-change" href="https://iiit-bhcoding.slack.com/">COMMUNITY</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  
+
+  
+
+  <script type="text/javascript">
+  var app = document.getElementById('appTop')
+  var nav = document.getElementById('navbar')
+  var memberNames = document.getElementById('memberNames')
+  var last_known_scroll_position = 0;
+  var ticking = false;
+  function doSomething(scroll_pos) {
+    if(scroll_pos<100){
+      nav.classList.add("navIn")
+      nav.classList.add("fixed-top")
+    } else if(scroll_pos>100){
+      nav.classList.remove("navIn")
+      nav.classList.add("navout")
+    }
+  }
+
+  window.addEventListener('scroll', function(e) {
+    last_known_scroll_position = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        doSomething(last_known_scroll_position);
+        ticking = false;
+      })
+      ticking = true;
+    }
+  })
+  </script>
+
+    <div class="jumbotron">
     <h1>Thank you for your precious submission!</h1>
-    <p class="lead">We appreciate your feedback. We will get back to you within as soon as possible. :smiley:</p>
+    <p class="lead">We appreciate your feedback. We will get back to you within as soon as possible. <img class="emoji" title=":smiley:" alt=":smiley:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" height="20" width="20"></p>
     <hr class="my-4">
-    <p class="lead">Have a great day ahead :+1:</p>
+    <p class="lead">Have a great day ahead <img class="emoji" title=":+1:" alt=":+1:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"></p>
     <p class="lead">
       <a class="btn waves-effect waves-light cyan lighten-8 thankyou" href="/" role="button">Home</a>
     </p>
 </div>
+
+  <footer class="footer-under">
+  <header class="header-footer">
+   <div class="svg-footer">
+     <svg id="sun" style="position: absolute;top: 2.5rem;right: 0;" width="160px" height="190px" viewbox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <circle cx="170" cy="100" r="100" fill="#F8D71B"></circle>
+     </svg>
+     <svg id="dunes" width="1399px" height="575px" style="top:10.5rem;left:-25rem;position:absolute" viewbox="0 0 1399 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <path d="M460.049805,0 C526.688307,0 914.984756,249.041033 914.984756,249.041033 L0,249.041033 C0,249.041033 393.411303,2.21509134e-15 460.049805,0 Z" fill="#F5A623"></path>
+       <path d="M460.165305,1 C460.165305,218.282873 1089.92664,248.654319 1089.92664,248.654319 L0,248.654319 C0,248.654319 393.526803,1 460.165305,1 Z" fill="#EE9F21"></path>
+       <path d="M839,73 C947.982568,73 1399,249 1399,249 L279,249 C279,249 730.017432,73 839,73 Z" fill="#F5A623"></path>
+       <path d="M839,73 C839,183.333997 1055.01296,249 1055.01296,249 L279,249 C279,249 730.017432,73 839,73 Z" fill="#ED9F21"></path>
+     </svg>
+   </div>
+  </header>
+  <div class="container-width">
+    <div class="footer-container">
+      <div class="foot-lists">
+        <div class="foot-list">
+          <div class="foot-list-item"><a href="/" target="_blank" class="foot-list-item-anchor">About us</a></div>
+          <div class="foot-list-item"><a href="/contact/" target="_blank" class="foot-list-item-anchor">Contact</a></div>
+          <div class="foot-list-item"><a href="https://medium.com/programming-society-gazette" target="_blank" class="foot-list-item-anchor">Articles</a></div>
+          <div class="foot-list-item"><a href="https://iiit-bhcoding.slack.com/" target="_blank" class="foot-list-item-anchor">Slack</a></div>
+        </div>
+        <div class="foot-list">
+          <div class="foot-list-item"><a href="https://github.com/p-society" target="_blank" class="foot-list-item-anchor">Github</a></div>
+          <div class="foot-list-item"><a href="https://github.com/p-society/p-society.github.io" target="_blank" class="foot-list-item-anchor">Site source code</a></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="form-sub">
+        <div class="foot-form-cont">
+          <div class="foot-form-title">Follow us</div>
+          <div class="foot-list-item">
+            <a href="https://www.facebook.com/psocietyiiitbh/" target="_blank" class="foot-list-item-anchor"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="https://twitter.com/psociiit" target="_blank" class="foot-list-item-anchor"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/p-soc/" target="_blank" class="foot-list-item-anchor"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="https://medium.com/programming-society-gazette" target="_blank" class="foot-list-item-anchor"><i class="fa fa-medium fa-2x"></i></a>
+            <a href="https://dribbble.com/psociiit" target="_blank" class="foot-list-item-anchor"><i class="fa fa-dribbble fa-2x"></i></a>
+          </div>
+          <div class="foot-form-desc">We will be happy to have you. <img class="emoji" title=":wink:" alt=":wink:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png" height="20" width="20">
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="made-with">
+      made with <img class="emoji" title=":heart:" alt=":heart:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png" height="20" width="20"> by <a href="https://github.com/p-society" target="_blank">p-society</a>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</footer>
+
+</body>
+</html>
